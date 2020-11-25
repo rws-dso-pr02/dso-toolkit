@@ -1,0 +1,118 @@
+<style>
+  .dso-map-example {
+    background-image: url("../../dummy/images/viewer.png");
+    background-size: cover;
+    width: 100%;
+    height: 900px;
+
+  }
+</style>
+{% render '@header', {
+  menu: menu,
+  breadcrumbs: breadcrumbs
+} %}
+<main>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-12">
+          {% render '@button', {type:'button', modifier:'link', label:'Terug', icon:'angle-left'} %}
+        </div>
+      </div>
+      <div class="dso-highlight-box">
+        <div class="row">
+          <div class="col-md-10">
+            <h1>Dickensplaats, Halve Maan – noord</h1>
+          </div>
+          <div class="col-md-2">
+            {% render '@button', {type:'button', modifier:'link', label:'Terug', icon:'map-location', iconOnly:'true'} %}
+          </div>
+          <div class="col-md-6">bestemmingsplan - gemeente Utrecht vastgesteld 18-06-2020 - geheel onherroepelijk in werking </div>
+          <div class="col-md-6">Utrecht NL.IMRO.0344.BPDICKENSHALVEMAAN-VA01</div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          {% render '@navigations',
+          submenu %}
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="dso-accordion dso-accordion-compact">
+            <div class="dso-accordion-section dso-open">
+              <h2 class="dso-section-handle">
+                <a href="#" aria-expanded="true">Hoofdstuk 1 Inleidende regels</a>
+              </h2>
+              <div class="dso-section-body">
+                <div class="dso-rich-content">
+                  <div class="dso-accordion dso-accordion-compact">
+                    <div class="dso-accordion-section dso-open">
+                      <h3 class="dso-section-handle">
+                        <a href="#" aria-expanded="true">Artikel 1 Begrippen</a>
+                      </h3>
+                      <div class="dso-section-body">
+                        <div class="dso-rich-content">
+                          <div class="dso-accordion dso-accordion-compact">
+                            <div class="dso-accordion-section dso-open">
+                              <h4 class="dso-section-handle">
+                                <a href="#" aria-expanded="true">1.10 Bestemmingsgrens</a>
+                              </h4>
+                              <div class="dso-section-body">
+                                <div class="dso-rich-content">
+                                  <p>De grens van een bestemmingsvlak.</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="dso-accordion-section">
+                              <h2 class="dso-section-handle">
+                                <a href="#" aria-expanded="false">1.11 Bestemmingsvlak</a>
+                              </h2>
+                            </div>
+                            <div class="dso-accordion-section">
+                              <h2 class="dso-section-handle">
+                                <a href="#" aria-expanded="false">1.12 Bijbehorend bouwwerk</a>
+                              </h3>
+                            </div>
+                            <div class="dso-accordion-section">
+                              <h2 class="dso-section-handle">
+                                <a href="#" aria-expanded="false">Bouwen</a>
+                              </h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="dso-accordion-section">
+                      <h2 class="dso-section-handle">
+                        <a href="#" aria-expanded="false">Artikel 2 Wijze van meten</a>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="dso-accordion-section">
+              <h2 class="dso-section-handle">
+                <a href="#" aria-expanded="false">Hoofdstuk 2 Bestemmingsregels</a>
+              </h2>
+            </div>
+            <div class="dso-accordion-section">
+              <h2 class="dso-section-handle">
+                <a href="#" aria-expanded="false">Hoofdstuk 3 Algemene regels</a>
+              </h3>
+            </div>
+            <div class="dso-accordion-section">
+              <h2 class="dso-section-handle">
+                <a href="#" aria-expanded="false">Hoofdstuk 4 Overgangs- en slotregels</a>
+              </h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="dso-map-example"></div>
+    </div>
+  </main>
+  {% render '@footer' %}
