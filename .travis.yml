@@ -14,6 +14,8 @@ jobs:
   - name: branch build and deployment
     if: (branch =~ /^#/ || branch = master) && type = push
     script:
+      yarn workspace @dso-toolkit/styling build &&
+      yarn workspace @dso-toolkit/core build &&
       yarn workspace dso-toolkit lint &&
       yarn workspace dso-toolkit build &&
       yarn workspace dso-toolkit test &&
@@ -26,6 +28,8 @@ jobs:
   - name: release
     if: tag =~ /^v/
     script:
+      yarn workspace @dso-toolkit/styling build &&
+      yarn workspace @dso-toolkit/core build &&
       yarn workspace dso-toolkit lint &&
       yarn workspace dso-toolkit build &&
       yarn workspace dso-toolkit test &&
