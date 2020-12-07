@@ -14,10 +14,10 @@ jobs:
   - name: branch build and deployment
     if: (branch =~ /^#/ || branch = master) && type = push
     script:
-      yarn lint &&
-      yarn build &&
-      yarn test &&
-      yarn copy-styling &&
+      yarn workspace dso-toolkit lint &&
+      yarn workspace dso-toolkit build &&
+      yarn workspace dso-toolkit test &&
+      yarn workspace dso-toolkit copy-styling &&
       mv build dist &&
       rsync -e "ssh -p ${DEPLOY_PORT}" --delete --verbose -r ./dist/library/ ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_ROOT}/dso-toolkit.nl/www/${TRAVIS_BRANCH/\#/_} &&
       rsync -e "ssh -p ${DEPLOY_PORT}" --delete --verbose -r ./dist/toolkit/ ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_ROOT}/cdn.dso-toolkit.nl/www/${TRAVIS_BRANCH/\#/_} &&
@@ -26,12 +26,12 @@ jobs:
   - name: release
     if: tag =~ /^v/
     script:
-      yarn lint &&
-      yarn build &&
-      yarn test &&
-      yarn copy-styling &&
+      yarn workspace dso-toolkit lint &&
+      yarn workspace dso-toolkit build &&
+      yarn workspace dso-toolkit test &&
+      yarn workspace dso-toolkit copy-styling &&
       mv build dist &&
-      yarn version ${TRAVIS_TAG:1} &&
+      yarn workspace dso-toolkit version ${TRAVIS_TAG:1} &&
       rsync -e "ssh -p ${DEPLOY_PORT}" --delete --verbose -r ./dist/library/ ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_ROOT}/dso-toolkit.nl/www/${TRAVIS_TAG:1} &&
       rsync -e "ssh -p ${DEPLOY_PORT}" --delete --verbose -r ./dist/toolkit/ ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_ROOT}/cdn.dso-toolkit.nl/www/${TRAVIS_TAG:1} &&
       ssh -p ${DEPLOY_PORT} ${DEPLOY_USER}@${DEPLOY_HOST} "cd ${DEPLOY_ROOT}/webhooks.dso-toolkit.nl && npm run update-versions" &&
