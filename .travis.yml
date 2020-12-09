@@ -24,7 +24,7 @@ jobs:
       rsync -e "ssh -p ${DEPLOY_PORT}" --delete -r ./packages/dso-toolkit/dist/library/ ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_ROOT}/dso-toolkit.nl/www/${TRAVIS_BRANCH/\#/_} &&
       rsync -e "ssh -p ${DEPLOY_PORT}" --delete -r ./packages/dso-toolkit/dist/toolkit/ ${DEPLOY_USER}@${DEPLOY_HOST}:${DEPLOY_ROOT}/cdn.dso-toolkit.nl/www/${TRAVIS_BRANCH/\#/_} &&
       ssh -p ${DEPLOY_PORT} ${DEPLOY_USER}@${DEPLOY_HOST} "cd ${DEPLOY_ROOT}/webhooks.dso-toolkit.nl && npm run update-versions" &&
-      percy snapshot --widths "380,780,1024,1280" --snapshots_regex "components\/preview\/((?!--).)+\.html$" dist/library/
+      percy snapshot --widths "380,780,1024,1280" --snapshots_regex "components\/preview\/((?!--).)+\.html$" packages/dso-toolkit/dist/library/
   - name: release
     if: tag =~ /^v/
     script:
