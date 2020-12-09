@@ -49,6 +49,7 @@ jobs:
     #     tags: true
     - provider: npm
       tag: next
+      src: packages/dso-toolkit
       edge: true
       email: thomas@infoprojects.nl
       api_token: $DEPLOY_NPM_TOKEN
