@@ -30,6 +30,21 @@
 </div>
 <br>
 <div class="row">
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'primary', label: 'Button met een veel langer label'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'primary', label: 'Button met een veel langer label', disabled: true} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@anchor', {modifier: 'btn btn-primary', label: 'Button met een veel langer label', url: '#'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'primary btn-sm', label: 'Button met een veel langer label'} %}
+  </div>
+</div>
+<br>
+<div class="row">
   <div class="col-md-12">
     <div class="dso-rich-content">
       <h3 class="dso-example-label">Primaire button met icon:</h3>
@@ -65,6 +80,36 @@
 </div>
 <br>
 <div class="row">
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'primary', label: 'Button met een veel langer label', icon: 'chevron-left'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'primary', label: 'Button met een veel langer label', disabled: true, icon: 'chevron-left'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@anchor', {modifier: 'btn btn-primary', label: 'Button met een veel langer label', url: '#', icon: 'chevron-left'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'primary btn-sm', label: 'Button met een veel langer label', icon: 'chevron-left'} %}
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'primary', label: 'Button met een veel langer label', iconAfter: 'chevron-right'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'primary', label: 'Button met een veel langer label', disabled: true, iconAfter: 'chevron-right'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@anchor', {modifier: 'btn btn-primary', label: 'Button met een veel langer label', url: '#', iconAfter: 'chevron-right'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'primary btn-sm', label: 'Button met een veel langer label', iconAfter: 'chevron-right'} %}
+  </div>
+</div>
+<br>
+<div class="row">
   <div class="col-md-12">
     <div class="dso-rich-content">
       <h3 class="dso-example-label">Primaire button met cms modifier:</h3>
@@ -82,6 +127,24 @@
   </div>
   <div class="col-md-3">
     {% render '@button', {type: 'button', modifier: 'primary btn-sm extern', label: 'Small'} %}
+  </div>
+  <br>
+  <div class="col-md-12">
+    <div class="dso-rich-content">
+      <code>.extern</code>
+    </div>
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'primary extern', label: 'Button met een veel langer label'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'primary extern', label: 'Button met een veel langer label', disabled: true} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@anchor', {modifier: 'btn btn-primary extern', label: 'Button met een veel langer label', url: '#'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'primary btn-sm extern', label: 'Button met een veel langer label'} %}
   </div>
   <br>
   <div class="col-md-12">
@@ -134,6 +197,21 @@
 </div>
 <br>
 <div class="row">
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'default', label: 'Button met een veel langer label'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'default', label: 'Button met een veel langer label', disabled: true} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@anchor', {modifier: 'btn btn-default', label: 'Button met een veel langer label', url: '#'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'default btn-sm', label: 'Button met een veel langer label'} %}
+  </div>
+</div>
+<br>
+<div class="row">
   <div class="col-md-12">
     <div class="dso-rich-content">
       <h3 class="dso-example-label">Secundaire button met icon:</h3>
@@ -169,6 +247,36 @@
 </div>
 <br>
 <div class="row">
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'default', label: 'Button met een veel langer label', icon: 'chevron-left'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'default', label: 'Button met een veel langer label', disabled: true, icon: 'chevron-left'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@anchor', {modifier: 'btn btn-default', label: 'Button met een veel langer label', url: '#', icon: 'chevron-left'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'default btn-sm', label: 'Button met een veel langer label', icon: 'chevron-left'} %}
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'default', label: 'Button met een veel langer label', iconAfter: 'chevron-right'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'default', label: 'Button met een veel langer label', disabled: true, iconAfter: 'chevron-right'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@anchor', {modifier: 'btn btn-default', label: 'Button met een veel langer label', url: '#', iconAfter: 'chevron-right'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'default btn-sm', label: 'Button met een veel langer label', iconAfter: 'chevron-right'} %}
+  </div>
+</div>
+<br>
+<div class="row">
   <div class="col-md-12">
     <div class="dso-rich-content">
       <h3 class="dso-example-label">Secundaire button met cms modifier:</h3>
@@ -186,6 +294,24 @@
   </div>
   <div class="col-md-3">
     {% render '@button', {type: 'button', modifier: 'default btn-sm extern', label: 'Small'} %}
+  </div>
+  <br>
+  <div class="col-md-12">
+    <div class="dso-rich-content">
+      <code>.extern</code>
+    </div>
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'default extern', label: 'Button met een veel langer label'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'default extern', label: 'Button met een veel langer label', disabled: true} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@anchor', {modifier: 'btn btn-default extern', label: 'Button met een veel langer label', url: '#'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'default btn-sm extern', label: 'Button met een veel langer label'} %}
   </div>
   <br>
   <div class="col-md-12">
@@ -235,6 +361,18 @@
 </div>
 <br>
 <div class="row">
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'link', label: 'Button met een veel langer label'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'link', label: 'Button met een veel langer label', disabled: true} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@anchor', {modifier: 'btn btn-link', label: 'Button met een veel langer label', url: '#'} %}
+  </div>
+</div>
+<br>
+<div class="row">
   <div class="col-md-12">
     <div class="dso-rich-content">
       <h3 class="dso-example-label">Tertiaire button met icon:</h3>
@@ -260,6 +398,30 @@
   </div>
   <div class="col-md-3">
     {% render '@anchor', {modifier: 'btn btn-link', label: 'Anchor', url: '#', iconAfter: 'chevron-right'} %}
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'link', label: 'Button met een veel langer label', icon: 'chevron-left'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'link', label: 'Button met een veel langer label', disabled: true, icon: 'chevron-left'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@anchor', {modifier: 'btn btn-link', label: 'Button met een veel langer label', url: '#', icon: 'chevron-left'} %}
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'link', label: 'Button met een veel langer label', iconAfter: 'chevron-right'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'link', label: 'Button met een veel langer label', disabled: true, iconAfter: 'chevron-right'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@anchor', {modifier: 'btn btn-link', label: 'Button met een veel langer label', url: '#', iconAfter: 'chevron-right'} %}
   </div>
 </div>
 <br>
@@ -292,6 +454,24 @@
   </div>
   <div class="col-md-3">
     {% render '@button', {type: 'button', modifier: 'link btn-sm extern', label: 'Small'} %}
+  </div>
+  <br>
+  <div class="col-md-12">
+    <div class="dso-rich-content">
+      <code>.extern</code>
+    </div>
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'link extern', label: 'Button met een veel langer label'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'link extern', label: 'Button met een veel langer label', disabled: 'true'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@anchor', {modifier: 'btn btn-link extern', label: 'Button met een veel langer label', url: '#'} %}
+  </div>
+  <div class="col-md-3">
+    {% render '@button', {type: 'button', modifier: 'link btn-sm extern', label: 'Button met een veel langer label'} %}
   </div>
   <br>
   <div class="col-md-12">
@@ -335,11 +515,11 @@
     <div class="dso-rich-content" style="margin-bottom: 24px; margin-top: 40px;">
       <h2>Button combinaties</h2>
       <p>
-        Wanneer buttons bij elkaar gegroepeerd moeten worden aangeboden, moet een <code>.dso-form-buttons</code> worden toegepast. 
+        Wanneer buttons bij elkaar gegroepeerd moeten worden aangeboden, moet een <code>.dso-form-buttons</code> worden toegepast.
         Doorgaans zullen deze groeperingen in context van een formulier staan, maar dit is niet noodzakelijk.
       </p>
       <p>
-        Als buttons links uitgelijnd moeten worden, worden deze gegroepeerd in een <code>div.dso-aside</code>. 
+        Als buttons links uitgelijnd moeten worden, worden deze gegroepeerd in een <code>div.dso-aside</code>.
         Uitzondering: dit is niet nodig in een <code>.dso-single-page</code>, daar worden de knoppen al links uitgelijnd.
       </p>
     </div>
