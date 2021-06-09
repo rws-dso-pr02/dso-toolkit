@@ -1,4 +1,50 @@
+{% render '@header', {menu: menu, breadcrumbs: []} -%}
 <main>
+  {% render '@application-heading', appheading -%}
+  <div>
+  {% render '@button', {type:'button', modifier:'link', label:'Gegevens bewerken', icon:'pencil'} %}
+  {% render '@button', {type:'button', modifier:'link', label:'Samenwerken sluiten', icon:'lock'} %}
+  </div>
+  <br>
+  <dl class="dso-columns dso-3-columns">
+
+    <div>
+        <dt>Organisator:</dt>
+        <dd>Gemeente Rotterdam</dd>
+    </div>
+
+    <div>
+        <dt>Verzoeknummer:</dt>
+        <dd>12123497987</dd>
+    </div>
+
+    <div>
+        <dt>Status:</dt>
+        <dd>Open</dd>
+    </div>
+
+    <div>
+        <dt>Creatie datum:</dt>
+        <dd>17-12-2019</dd>
+    </div>
+
+    <div>
+        <dt>Contactpersoon:</dt>
+        <dd>Jan van Veen</dd>
+    </div>
+
+    <div>
+        <dt>Emailadres:</dt>
+        <dd>j.veen@testmail.nl</dd>
+    </div>
+
+    <div>
+        <dt>Telefoonnummer:</dt>
+        <dd>06-12345678</dd>
+    </div>
+
+  </dl>
+  {% render '@navigations', submenu -%}
   <h2>Actieverzoeken</h2>
   <div class="row">
     <div class="col-md-5 col-sm-12 col-xs-12">

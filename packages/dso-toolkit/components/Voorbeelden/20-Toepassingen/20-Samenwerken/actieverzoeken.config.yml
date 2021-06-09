@@ -2,6 +2,24 @@ notes: |
 order: 10
 status: ready
 context:
+  menu:
+    modifier: main
+    items:
+      - label: Samenwerkingen
+        active: true
+      - label: Acties overzicht
+      - label: Notificatie overzicht
+  appheading:
+    title: Aanvraag Bomenkappen Genooyerweg 37
+    subtitle: Samenwerkings overzicht
+  submenu:
+    modifier: sub
+    items:
+      - label: Documenten
+      - label: Ketenpartners
+      - label: Notificaties
+      - label: Actieverzoeken
+        active: true
   tabNav:
     tabs:
       - label: Ontvangen
