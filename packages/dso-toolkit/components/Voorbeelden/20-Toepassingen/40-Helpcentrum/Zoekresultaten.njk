@@ -1,0 +1,28 @@
+{% render '@header', {menu: menu, breadcrumbs: []} -%}
+<main>
+  <a href="#" class="dso-tertiary">
+    <dso-icon icon="chevron-left"></dso-icon><span>Helpcentrum</span>
+  </a>
+  <h1>Zoekresultaat voor ‘Situatieschets’</h1>
+  <div class="row">
+    <div class="col-md-8">
+      <div class="dso-search-bar">
+        <div class="dso-search-bar-input">
+
+          <label for="search-bar--default" class="sr-only">Zoeken in het helpcentrum</label>
+          <span class="dso-search-icon" aria-hidden="true"></span>
+
+          <input type="text" id="search-bar--default" placeholder="Help-artikelen zoeken"/>
+
+        </div>
+        <button type="button" class="dso-secondary">
+              Zoeken
+        </button>
+      </div>
+      <hr>
+      <h3>2 help-artikelen gevonden</h3>
+    </div>
+  </div>
+
+</main>
+{% render '@footer' %}
