@@ -15,6 +15,9 @@
     </div>
   </div>
 
+  <dso-tooltip for="boom-edit" position="top">Projectnaam bewerken</dso-tooltip>
+  <dso-tooltip for="boom-remove" position="top">Verwijderen</dso-tooltip>
+
   <div class="dso-table-responsive">
     <table class="table">
       <caption class="sr-only">Overzicht van gebruikersnamen</caption>
@@ -37,8 +40,8 @@
             Initiatiefnemer
           </td>
           <td class="text-right">
-            {% render '@button', {label:'Boomkappen in de achtertuin aanpassen', type:'button', modifier:'dso-tertiary', icon:'pencil', iconOnly: true, tooltip: {label: 'Projectnaam bewerken', position: 'top'} } %}
-            {% render '@button', {label:'Boomkappen in de achtertuin verwijderen', type:'button', modifier:'dso-tertiary', icon:'trash', iconOnly: true, tooltip: {label: 'Verwijderen', position: 'top'} } %}
+            {% render '@button', {id: 'boom-edit', label:'Boomkappen in de achtertuin aanpassen', type:'button', modifier:'dso-tertiary', icon:'pencil', iconOnly: true } %}
+            {% render '@button', {id: 'boom-remove', label:'Boomkappen in de achtertuin verwijderen', type:'button', modifier:'dso-tertiary', icon:'trash', iconOnly: true } %}
           </td>
         </tr>
         <tr>
